@@ -108,3 +108,39 @@ h1 {
     margin-bottom: 20px;
     box-shadow: 0 0 15px #8d29ff;
 }
+
+.desc {
+    font-size: 24px;
+    color: #d9a6ff;
+    margin-top: -5px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px #c26bff;
+    opacity: 0.9;
+}
+
+.notification {
+    position: fixed;
+    top: 30px;
+    right: -400px; /* hidden offscreen */
+    background: rgba(70, 0, 120, 0.55);
+    padding: 18px 28px;
+    font-size: 20px;
+    border: 2px solid #c26bff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #b300ff;
+    color: #f2d3ff;
+    backdrop-filter: blur(4px);
+    transition: all 0.7s ease;
+    z-index: 9999;
+    text-shadow: 0 0 10px #c26bff;
+}
+
+.notification.show {
+    right: 30px; /* slides in smoothly */
+    opacity: 1;
+}
+
+.notification.hidden {
+    opacity: 0;
+}
+
